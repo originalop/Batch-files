@@ -4,6 +4,9 @@ cd /d "C:\Photos_Demo"
 
 set count=1
 for %%f in (*.jpg *.jpeg *.png *.gif *.bmp *.tiff *.webp) do (
-  ren "%%f" "image_!count!.jpg"
+  ren "%%f" "image_!count!%%~xf"
   set /a count+=1
 )
+
+echo Renaming completed!
+pause
