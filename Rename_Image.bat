@@ -7,6 +7,3 @@ for %%f in (*.jpg *.jpeg *.png *.gif *.bmp *.tiff *.webp) do (
   ren "%%f" "image_!count!%%~xf"
   set /a count+=1
 )
-
-echo Renaming completed!
-pause
