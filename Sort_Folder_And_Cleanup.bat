@@ -79,3 +79,13 @@ if not exist "%destinationPath%\Python" (
     move "%destinationPath%\%%i" "%destinationPath%\Python"
   )
 )
+:: Archives
+if not exist "%destinationPath%\Archives" (
+  mkdir Archives
+  for %%i in (*.zip *.rar *.7z *.tar *.gz *.bz2 *.xz *.iso *.cab *.dmg *.jar *.apk *.deb *.rpm *.cpio *.lzma *.zst) do (
+    move "%destinationPath%\%%i" "%destinationPath%\Archives"
+  )
+  ) else (
+  for %%i in (*.zip *.rar *.7z *.tar *.gz *.bz2 *.xz *.iso *.cab *.dmg *.jar *.apk *.deb *.rpm *.cpio *.lzma *.zst) do (
+    move "%destinationPath%\%%i" "%destinationPath%\Archives"
+  )
