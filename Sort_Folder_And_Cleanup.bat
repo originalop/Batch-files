@@ -79,5 +79,3 @@ if not exist "%destinationPath%\Python" (
         move "%destinationPath%\%%i" "%destinationPath%\Python"
     )
 )
-::Clean disk
-cleanmgr /sagerun:1
