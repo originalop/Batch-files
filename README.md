@@ -5,5 +5,5 @@ timeout /t 5 /nobreak
 echo Task started after 5 seconds.
 pause
 ```
-**This piece of code wait for 5 seconds to execute the file. This would help you when you want to copy data from source to destination afer startup and 40 seconds later due to system bootup.**
+**This piece of code waits for 5 seconds before executing the file. This delay can be useful when you want to copy data from the source to the destination after startup, allowing the system 40 seconds to fully boot up**
 ---
